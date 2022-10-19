@@ -1,6 +1,7 @@
 package model.services;
 
 import model.entities.CarRental;
+import model.entities.Invoice;
 
 public class RentalService {
     private Double pricePerHour;
@@ -39,7 +40,7 @@ public class RentalService {
         this.brazilTaxService = brazilTaxService;
     }
 
-//    public void processInvoice(CarRental carRental){
-//        carRental.setInvoice();
-//    }
+    public void processInvoice(CarRental carRental){
+        carRental.setInvoice(new Invoice(50.0, 10.0));
+    }
 }
