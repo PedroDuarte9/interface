@@ -40,6 +40,6 @@ public class RentalService {
     }
 
 //    public void processInvoice(CarRental carRental){
-//        carRental.seT
+//        carRental.setInvoice();
 //    }
 }
