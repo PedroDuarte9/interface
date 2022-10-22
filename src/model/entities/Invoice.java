@@ -29,7 +29,7 @@ public class Invoice {
         this.tax = tax;
     }
 
-    public Double getTotalPayment() {
-        return getBasicPayment() * getTax();
+    public Double getTotalPayment() { //Aqui utilizamos os get porque se no futuro precisarmos mudar a lógica do tax() ou do basicPayment() não vai afetar
+        return getBasicPayment() + getTax();
     }
 }
